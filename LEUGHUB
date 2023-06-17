@@ -1,0 +1,61 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Lueg Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroEnabled = true, IntroText = "Successfully injected"})
+
+local Tab = Window:MakeTab({
+	Name = "discord",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "discord.gg/bWF3DZMcgf"
+})
+local Tab = Window:MakeTab({
+	Name = "countegg",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tab = Window:MakeTab({
+	Name = "Project Slayers",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "AutoFarmLilys",
+	Callback = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/DenizAf4can/SomeScripts/main/Project_Slayers_Lily'))()
+  	end    
+})
+Tab:AddButton({
+	Name = "AutoFarm Dungeon",
+	Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/Skeereddo/name/main/krnl', true))()
+	OrionLib:MakeNotification({
+	Name = "Warning!!!",
+	Content = "Check the discord for god mode / invincible (anti cheat)",
+	Image = "rbxassetid://4483345998",
+	Time = 15
+})
+	end
+})
+local Tab = Window:MakeTab({
+	Name = "JailBreak",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Big GUI",
+	Callback = function()loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/06073a4d0b5869f6be09868f0970548a.lua"))()
+		OrionLib:MakeNotification({
+			Name = "",
+			Content = "Some toggles may not work",
+			Image = "rbxassetid://4483345998",
+			Time = 10
+})			
+	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Coming soon",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
