@@ -20,7 +20,14 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
+Tab:AddButton({
+	Name = "Main project slayers",
+	Callback = function()
+local LoaderUrl = "https://raw.githubusercontent.com/ogamertv12/SylveonHub/main/NewLoader.lua"
+repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet(LoaderUrl))() 
+  	end    
+})
 Tab:AddButton({
 	Name = "AutoFarmLilys",
 	Callback = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/DenizAf4can/SomeScripts/main/Project_Slayers_Lily'))()
@@ -59,3 +66,21 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+Tab:AddButton({
+	Name = "Thunder",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/AndrewDarkyy/NOWAY/main/THUNDER_MOBILE_NO_WAY.lua"))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Dahood",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "(Bad Script) ",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Countegg/scripts/main/DaHoodBad"))()
+  	end    
+})
+
