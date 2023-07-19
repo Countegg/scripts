@@ -33,15 +33,6 @@ Tab:AddButton({
 	Callback = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/DenizAf4can/SomeScripts/main/Project_Slayers_Lily'))()
   	end    
 })
-Tab:AddButton({
-	Name = "AutoFarm Dungeon",
-	Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/Skeereddo/name/main/krnl', true))()
-	OrionLib:MakeNotification({
-	Name = "Warning!!!",
-	Content = "Check the discord for god mode / invincible (anti cheat)",
-	Image = "rbxassetid://4483345998",
-	Time = 15
-})
 	end
 })
 local Tab = Window:MakeTab({
